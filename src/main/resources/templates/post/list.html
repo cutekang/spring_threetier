@@ -18,6 +18,7 @@
     <button onclick="window.location.href='/member/logout'">로그아웃</button>
     <button onclick="window.location.href='/member/withdraw'">탈퇴</button>
     <button onclick="window.location.href='/task/product'">상품등록</button>
+    <button onclick="window.location.href='/task/list'">상품목록</button>
     <th:block th:if="${posts != null and #lists.size(posts) != 0}"> <!--if문이 true 일 떄-->
         <table>
             <tr>
@@ -29,7 +30,7 @@
                 <tr th:object="${post}">
                     <td>
                         <a th:href="@{/post/read(id=${post.id})}">
-                            <span  th:text="*{id}"></span>
+                            <span th:text="*{id}"></span>
                         </a>
                     </td>
                     <td th:text="*{postTitle}"></td>

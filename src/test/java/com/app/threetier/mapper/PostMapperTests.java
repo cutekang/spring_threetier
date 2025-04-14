@@ -1,6 +1,7 @@
 package com.app.threetier.mapper;
 
 import com.app.threetier    .domain.PostVO;
+import com.app.threetier.domain.ProductVO;
 import com.app.threetier.service.PostService;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
